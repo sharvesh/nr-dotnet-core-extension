@@ -17,4 +17,6 @@ include_files:
 - newrelic.config
 language: newrelic-dotnetcore-extension
 pre_package: scripts/build.sh
-stack: cflinuxfs3
+stack: 
+ - cflinuxfs3
+ - cflinuxfs4
