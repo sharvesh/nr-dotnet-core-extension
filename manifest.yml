@@ -4,6 +4,9 @@ dependencies:
     sha256: 0d527ed576fae29b2ba5f57e638ec3d2ed6b74352cc154b59beedd76cbeaa883
     uri: https://download.newrelic.com/dot_net_agent/previous_releases/10.9.1/newrelic-dotnet-agent_10.9.1_amd64.tar.gz
     version: latest
+    cf_stacks:
+    - cflinuxfs3
+    - cflinuxfs4
 dependency_deprecation_dates: null
 include_files:
   - README.md
@@ -17,6 +20,3 @@ include_files:
   - newrelic.config
 language: newrelic-dotnetcore-extension
 pre_package: scripts/build.sh
-stack:
-  - cflinuxfs3
-  - cflinuxfs4
